@@ -13,7 +13,6 @@ void fun(vector<int>v,int index,int size,vector<int>ans){
 		ans.push_back(v[index]);
 		fun(v,index+1,size,ans);
 		ans.pop_back();
-		fun(v,index+1,size,ans);
 	}
 	else if(ans.back() > v[index]){
 		fun(v,index+1,size,ans);
